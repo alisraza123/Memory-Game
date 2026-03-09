@@ -45,16 +45,17 @@ Optional: React Hooks for state management
 
 ![Memory Game Screenshot](./src/assets/screenshot.png)
 
-📂 Project Structure
+## 📂 Project Structure
+
 memory-game/
 │
 ├── public/
-│   └── index.html
+│ └── index.html
 ├── src/
-│   ├── components/  # Card and game components
-│   ├── assets/      # Images for cards
-│   ├── App.js       # Main app
-│   └── index.js     # Entry point
+│ ├── components/ # Card and game components
+│ ├── assets/ # Images for cards
+│ ├── App.js # Main app
+│ └── index.js # Entry point
 └── package.json
 📝 How to Play
 
