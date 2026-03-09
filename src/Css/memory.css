@@ -1,0 +1,210 @@
+.cardBox{
+    min-width: 50%;
+    min-height: 60vh;
+    /* background-color:rgb(9, 43, 66); */
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding: 1vw 0vw;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 2vw;
+
+
+}
+.cardBox h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(2, 0, 0);
+}
+.cardBox .textDiv{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    margin-bottom: 2vw;
+    /* background-color: red; */
+}
+.cardBox .textDiv img{
+    width: 5%;
+    filter: invert(100%);
+    height: 100%;
+    
+
+}
+.cardBox>div h1{
+    font-size: 2vw;
+    font-weight: 500;
+    /* color: #fff; */
+}
+.cardBox .cardSection{
+    width:fit-content;
+    height: fit-content;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1vw;
+    padding-bottom: 15px;
+    
+
+}
+.card{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(32, 32, 32);
+    background-repeat: no-repeat ;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    background-size: contain;
+    border-radius: .6rem;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+
+overflow: hidden;
+
+}
+.border{
+    border: 2px solid rgb(255, 0, 0);
+
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;height: 100vh;
+}
+
+.cardMatch{
+    /* border: .2rem solid orangered; */
+    background-color: rgba(0, 0, 0, 0.89)
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #62b1c9; */
+    background-color: #c9ba62;
+    /* background-color: #25071f; */
+    /* background-color: #2f030b; */
+
+    bottom: 0%;
+    transition: all 0.2s ease-in-out;
+    /* box-shadow: #0a5480 0px 0px 5px 5px inset; */
+    }
+.open{
+    bottom:-100%;
+}
+.changeBackground{
+    background: rgba(0, 0, 0, 0.89)
+}
+.create
+{
+    color: black !important;
+    position: absolute ;
+    bottom: 0;
+    font-weight: 300 !important;
+    font-size: 1vw !important;
+
+}
+@media screen and (max-width:1200px) {
+    .card,.open{
+        width: 8vw;
+        height: 8vw;
+
+    }
+    .cardBox{
+        min-width: 90%;
+        min-height: 60vh;}
+    .cardBox .cardSection{
+        grid-template-columns: repeat(8, 1fr);
+    }
+    .card{
+
+        border-radius: 2px;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+
+    }
+    .create{
+        font-size: 2vw !important;
+    }
+}
+@media screen and (max-width:800px) {
+    .cardBox .cardSection{
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 2vw;
+    }
+    .card{
+
+        border-radius: 3px;
+    box-shadow: 0px 0px 5px 1px rgb(0, 0, 0);
+
+    }
+    .cardBox>div h1{
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .cardBox{
+        padding:auto 5vw;
+    }
+    .cardBox .cardSection{
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1.5vw;
+       
+    }
+    .cardBox{
+        width: 100%;}
+    .card{
+        width: 12vw;
+        height:12vw;
+        border-radius: 5px;
+        box-shadow: 0px 0px 3px 1px rgb(0, 0, 0);
+    }
+    .create{
+        font-size: 3vw !important;
+    }
+    .cardBox>div h1{
+        font-size: 5vw;}
+}
+@media screen and (max-width:360px) {
+    .cardBox .cardSection{
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 2.5vw;
+       
+    }
+
+    .card{
+        width: 12vw;
+        height:12vw;
+        border-radius: 3px;
+    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0);
+
+    }
+    .create{
+        font-size: 3vw !important;
+    }
+    .cardBox>div h1{
+        font-size: 5vw;}
+}
+
+@media screen and (max-width:200px) {
+    .cardBox .cardSection{
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 3.5vw;
+       
+    }
+
+    .card{
+        width: 8vw;
+        height:8vw;
+        border-radius: 1px;
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
+
+    }}
